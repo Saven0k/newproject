@@ -1,0 +1,23 @@
+{% extends "./layout.html" %}
+
+
+{% block title %}
+Главная страница
+{% endblock  %}
+
+{% block header %}
+Главная страница нашего магазина
+{% endblock  %}
+
+
+
+
+{% block content %}
+<div class="buttonS">
+    <a class='link-app' href="{% url 'about' %}"> Перейти на страницу о нас</a>
+</div>
+{% endblock  %}
+
+{% block footer %}
+конец!
+{% endblock %}

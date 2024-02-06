@@ -1,0 +1,30 @@
+﻿{% extends "./layout.html" %}
+
+
+{% block title %}
+{{ title }}
+{% endblock  %}
+
+{% block header %}
+{{ header }}
+{% endblock  %}
+
+
+{% block content %}
+<h3 >Продукты:</h3><br>
+<br>
+
+<table>
+    {% for good in goods %}
+    <tr>
+        <td>
+            <br><p>{{ good.product.title }}</p>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock  %}
+
+{% block footer %}
+конец!
+{% endblock %}

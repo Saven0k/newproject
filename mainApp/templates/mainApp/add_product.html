@@ -1,0 +1,23 @@
+﻿{% extends "./layout.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block header %}
+Шапка
+{% endblock  %}
+
+
+
+{% block content %}
+<h3>{{ message }}</h3>
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Загрузить</button>
+</form>
+{% endblock %}
+
+
+{% block footer %}
+Подвал
+{% endblock %}

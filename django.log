@@ -1,0 +1,1119 @@
+[INFO    :   django.utils.autoreload] -  2024-01-12 14:12:48,198 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 14:12:54,090 : log_message @ 0212: "GET / HTTP/1.1" 200 123
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:00:45,731 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-12 18:00:51,756 : log_response @ 0241: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 11, in index
+    return render(request, 'mainApp/index.html')
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 12: 'block'. Looking for one of: endblock.
+[ERROR   :             django.server] -  2024-01-12 18:00:51,761 : log_message @ 0212: "GET / HTTP/1.1" 500 154791
+[ERROR   :            django.request] -  2024-01-12 18:01:44,691 : log_response @ 0241: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 11, in index
+    return render(request, 'mainApp/index.html')
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 12: 'block'. Looking for one of: endblock.
+[ERROR   :             django.server] -  2024-01-12 18:01:44,695 : log_message @ 0212: "GET / HTTP/1.1" 500 154697
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:01:54,010 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-12 18:01:59,811 : log_response @ 0241: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 11, in index
+    return render(request, 'mainApp/index.html')
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 12: 'block'. Looking for one of: endblock.
+[ERROR   :             django.server] -  2024-01-12 18:01:59,815 : log_message @ 0212: "GET / HTTP/1.1" 500 154697
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:18:03,305 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-12 18:18:04,887 : log_response @ 0241: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: layout.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 11, in index
+    return render(request, 'mainApp/index.html')
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: layout.html
+[ERROR   :             django.server] -  2024-01-12 18:18:04,892 : log_message @ 0212: "GET / HTTP/1.1" 500 129549
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:18:37,390 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 18:18:38,569 : log_message @ 0212: "GET / HTTP/1.1" 200 503
+[WARNING :            django.request] -  2024-01-12 18:18:38,607 : log_response @ 0241: Not Found: /amin.css
+[WARNING :             django.server] -  2024-01-12 18:18:38,608 : log_message @ 0212: "GET /amin.css HTTP/1.1" 404 2399
+[INFO    :             django.server] -  2024-01-12 18:19:20,020 : log_message @ 0212: "GET / HTTP/1.1" 200 510
+[WARNING :            django.request] -  2024-01-12 18:19:20,047 : log_response @ 0241: Not Found: /..static/main.css
+[WARNING :             django.server] -  2024-01-12 18:19:20,048 : log_message @ 0212: "GET /..static/main.css HTTP/1.1" 404 2426
+[INFO    :             django.server] -  2024-01-12 18:19:29,493 : log_message @ 0212: "GET / HTTP/1.1" 200 511
+[WARNING :             django.server] -  2024-01-12 18:19:29,515 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 404 1783
+[WARNING :             django.server] -  2024-01-12 18:19:31,532 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 404 1783
+[INFO    :             django.server] -  2024-01-12 18:20:31,645 : log_message @ 0212: "GET / HTTP/1.1" 200 511
+[WARNING :             django.server] -  2024-01-12 18:20:31,670 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 404 1783
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:21:53,201 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 18:21:54,840 : log_message @ 0212: "GET / HTTP/1.1" 200 510
+[WARNING :             django.server] -  2024-01-12 18:21:54,871 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 404 1783
+[INFO    :             django.server] -  2024-01-12 18:23:38,863 : log_message @ 0212: "GET / HTTP/1.1" 200 501
+[WARNING :            django.request] -  2024-01-12 18:23:38,892 : log_response @ 0241: Not Found: /main.css
+[WARNING :             django.server] -  2024-01-12 18:23:38,893 : log_message @ 0212: "GET /main.css HTTP/1.1" 404 2399
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:25:22,450 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-12 18:25:24,802 : log_response @ 0241: Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 11, in index
+    return render(request, 'mainApp/index.html')
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static'. Did you forget to register or load this tag?
+[ERROR   :             django.server] -  2024-01-12 18:25:24,807 : log_message @ 0212: "GET / HTTP/1.1" 500 160709
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:25:51,683 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 18:25:53,515 : log_message @ 0212: "GET / HTTP/1.1" 200 510
+[INFO    :             django.server] -  2024-01-12 18:25:53,590 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 200 528
+[WARNING :            django.request] -  2024-01-12 18:25:53,871 : log_response @ 0241: Not Found: /fonts/gilroy-bold.ttf
+[WARNING :             django.server] -  2024-01-12 18:25:53,871 : log_message @ 0212: "GET /fonts/gilroy-bold.ttf HTTP/1.1" 404 2438
+[INFO    :             django.server] -  2024-01-12 18:27:42,617 : log_message @ 0212: "GET / HTTP/1.1" 200 511
+[INFO    :             django.server] -  2024-01-12 18:27:42,640 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 304 0
+[WARNING :            django.request] -  2024-01-12 18:27:42,847 : log_response @ 0241: Not Found: /fonts/gilroy-bold.ttf
+[WARNING :             django.server] -  2024-01-12 18:27:42,848 : log_message @ 0212: "GET /fonts/gilroy-bold.ttf HTTP/1.1" 404 2438
+[INFO    :             django.server] -  2024-01-12 18:28:34,692 : log_message @ 0212: "GET / HTTP/1.1" 200 511
+[INFO    :             django.server] -  2024-01-12 18:28:34,711 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 200 616
+[WARNING :            django.request] -  2024-01-12 18:28:35,012 : log_response @ 0241: Not Found: /fonts/gilroy-bold.ttf
+[WARNING :             django.server] -  2024-01-12 18:28:35,012 : log_message @ 0212: "GET /fonts/gilroy-bold.ttf HTTP/1.1" 404 2438
+[INFO    :             django.server] -  2024-01-12 18:28:38,501 : log_message @ 0212: "GET / HTTP/1.1" 200 511
+[INFO    :             django.server] -  2024-01-12 18:28:38,519 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 304 0
+[WARNING :            django.request] -  2024-01-12 18:28:38,767 : log_response @ 0241: Not Found: /fonts/gilroy-bold.ttf
+[WARNING :             django.server] -  2024-01-12 18:28:38,767 : log_message @ 0212: "GET /fonts/gilroy-bold.ttf HTTP/1.1" 404 2438
+[INFO    :             django.server] -  2024-01-12 18:28:40,581 : log_message @ 0212: "GET / HTTP/1.1" 200 511
+[INFO    :             django.server] -  2024-01-12 18:28:40,601 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 304 0
+[WARNING :            django.request] -  2024-01-12 18:28:40,842 : log_response @ 0241: Not Found: /fonts/gilroy-bold.ttf
+[WARNING :             django.server] -  2024-01-12 18:28:40,842 : log_message @ 0212: "GET /fonts/gilroy-bold.ttf HTTP/1.1" 404 2438
+[INFO    :             django.server] -  2024-01-12 18:28:43,236 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 304 0
+[INFO    :             django.server] -  2024-01-12 18:28:57,784 : log_message @ 0212: "GET / HTTP/1.1" 200 511
+[INFO    :             django.server] -  2024-01-12 18:28:57,804 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 200 616
+[WARNING :            django.request] -  2024-01-12 18:28:57,988 : log_response @ 0241: Not Found: /fonts/gilroy-bold.ttf
+[WARNING :             django.server] -  2024-01-12 18:28:57,989 : log_message @ 0212: "GET /fonts/gilroy-bold.ttf HTTP/1.1" 404 2438
+[INFO    :             django.server] -  2024-01-12 18:29:21,266 : log_message @ 0212: "GET /about HTTP/1.1" 301 0
+[INFO    :             django.server] -  2024-01-12 18:29:21,271 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 506
+[INFO    :             django.server] -  2024-01-12 18:29:21,294 : log_message @ 0212: "GET /static/main.css HTTP/1.1" 304 0
+[WARNING :            django.request] -  2024-01-12 18:29:21,588 : log_response @ 0241: Not Found: /fonts/gilroy-bold.ttf
+[WARNING :             django.server] -  2024-01-12 18:29:21,589 : log_message @ 0212: "GET /fonts/gilroy-bold.ttf HTTP/1.1" 404 2438
+[INFO    :             django.server] -  2024-01-12 18:32:22,603 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 510
+[INFO    :             django.server] -  2024-01-12 18:32:22,624 : log_message @ 0212: "GET /static/css/main.css HTTP/1.1" 200 616
+[WARNING :             django.server] -  2024-01-12 18:32:22,878 : log_message @ 0212: "GET /static/fonts/gilroy-bold.ttf HTTP/1.1" 404 1822
+[INFO    :             django.server] -  2024-01-12 18:33:53,872 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 518
+[INFO    :             django.server] -  2024-01-12 18:33:53,892 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 200 616
+[WARNING :             django.server] -  2024-01-12 18:33:54,147 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:55:46,680 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:55:47,377 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:55:58,206 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-12 18:55:58,773 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-12 19:00:59,869 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 19:01:01,744 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 824
+[INFO    :             django.server] -  2024-01-12 19:01:01,817 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 200 682
+[WARNING :             django.server] -  2024-01-12 19:01:02,101 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 19:01:06,298 : log_message @ 0212: "GET / HTTP/1.1" 200 923
+[INFO    :             django.server] -  2024-01-12 19:01:06,322 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 304 0
+[WARNING :             django.server] -  2024-01-12 19:01:06,577 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 19:01:08,303 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 824
+[WARNING :             django.server] -  2024-01-12 19:01:08,583 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :   django.utils.autoreload] -  2024-01-12 20:33:11,436 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 20:33:13,639 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:33:13,664 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 304 0
+[WARNING :             django.server] -  2024-01-12 20:33:13,834 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:33:15,052 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:33:15,317 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:33:15,709 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:33:15,747 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:33:17,780 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:33:18,042 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:33:19,164 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:33:19,427 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:33:20,395 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:33:20,655 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:34:01,041 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[WARNING :             django.server] -  2024-01-12 20:34:01,318 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:34:02,369 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:34:02,504 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:34:04,375 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[WARNING :             django.server] -  2024-01-12 20:34:04,645 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:34:05,464 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:34:05,729 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:34:06,410 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[WARNING :             django.server] -  2024-01-12 20:34:06,677 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:34:07,495 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:34:07,762 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:34:47,265 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:34:47,392 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :   django.utils.autoreload] -  2024-01-12 20:35:45,689 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 20:35:46,840 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:35:47,098 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:36:05,997 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:36:06,238 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :   django.utils.autoreload] -  2024-01-12 20:36:12,379 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 20:36:13,484 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:36:13,723 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:36:14,660 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:36:14,882 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :             django.server] -  2024-01-12 20:36:14,895 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:36:14,991 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:36:15,139 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[WARNING :             django.server] -  2024-01-12 20:36:15,153 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[WARNING :             django.server] -  2024-01-12 20:36:15,200 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 404 1846
+[INFO    :   django.utils.autoreload] -  2024-01-12 20:38:35,528 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 20:38:40,021 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:38:40,287 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 200 80528
+[INFO    :             django.server] -  2024-01-12 20:41:06,664 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[INFO    :             django.server] -  2024-01-12 20:41:07,330 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:41:07,963 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[INFO    :             django.server] -  2024-01-12 20:41:08,909 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:41:27,929 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :   django.utils.autoreload] -  2024-01-12 20:41:32,460 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-12 20:41:33,777 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:42:11,409 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:42:12,125 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[INFO    :             django.server] -  2024-01-12 20:42:12,730 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:42:13,217 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[INFO    :             django.server] -  2024-01-12 20:42:13,496 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:42:13,828 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[INFO    :             django.server] -  2024-01-12 20:42:14,119 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:42:14,569 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[INFO    :             django.server] -  2024-01-12 20:42:15,105 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:42:15,570 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 934
+[INFO    :             django.server] -  2024-01-12 20:42:16,057 : log_message @ 0212: "GET / HTTP/1.1" 200 940
+[INFO    :             django.server] -  2024-01-12 20:43:03,866 : log_message @ 0212: "GET / HTTP/1.1" 200 992
+[INFO    :             django.server] -  2024-01-12 20:43:03,941 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 200 777
+[WARNING :             django.server] -  2024-01-12 20:43:04,160 : log_message @ 0212: "GET /static/mainApp/css/fonts/gilroy-bold.ttf HTTP/1.1" 404 1858
+[INFO    :             django.server] -  2024-01-12 20:43:12,649 : log_message @ 0212: "GET / HTTP/1.1" 200 992
+[INFO    :             django.server] -  2024-01-12 20:43:12,669 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 200 755
+[WARNING :             django.server] -  2024-01-12 20:43:12,934 : log_message @ 0212: "GET /static/mainApp/css/fonts/gilroy-bold.ttf HTTP/1.1" 404 1858
+[INFO    :             django.server] -  2024-01-12 20:43:15,374 : log_message @ 0212: "GET /about/ HTTP/1.1" 200 999
+[INFO    :             django.server] -  2024-01-12 20:43:15,401 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 304 0
+[WARNING :             django.server] -  2024-01-12 20:43:15,656 : log_message @ 0212: "GET /static/mainApp/css/fonts/gilroy-bold.ttf HTTP/1.1" 404 1858
+[INFO    :             django.server] -  2024-01-12 20:43:16,145 : log_message @ 0212: "GET / HTTP/1.1" 200 992
+[INFO    :             django.server] -  2024-01-12 20:43:16,169 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 304 0
+[WARNING :             django.server] -  2024-01-12 20:43:16,423 : log_message @ 0212: "GET /static/mainApp/css/fonts/gilroy-bold.ttf HTTP/1.1" 404 1858
+[INFO    :             django.server] -  2024-01-12 20:43:31,192 : log_message @ 0212: "GET / HTTP/1.1" 200 992
+[INFO    :             django.server] -  2024-01-12 20:43:31,213 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 200 756
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:05:50,244 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:05:55,207 : log_message @ 0212: "GET / HTTP/1.1" 200 992
+[INFO    :             django.server] -  2024-01-30 17:05:55,286 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 200 756
+[INFO    :             django.server] -  2024-01-30 17:05:55,591 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 200 80528
+[INFO    :             django.server] -  2024-01-30 17:06:04,401 : log_message @ 0212: "GET /goods HTTP/1.1" 301 0
+[ERROR   :            django.request] -  2024-01-30 17:06:04,458 : log_response @ 0241: Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: goods() missing 2 required positional arguments: 'client_id' and 'days'
+[ERROR   :             django.server] -  2024-01-30 17:06:04,460 : log_message @ 0212: "GET /goods/ HTTP/1.1" 500 64969
+[WARNING :            django.request] -  2024-01-30 17:06:25,211 : log_response @ 0241: Not Found: /goods/1/7
+[WARNING :             django.server] -  2024-01-30 17:06:25,212 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 404 2597
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:06:36,990 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:06:37,562 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:06:41,146 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:06:41,724 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:06:46,325 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:06:46,924 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:06:50,509 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:06:51,071 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-30 17:06:52,742 : log_response @ 0241: Internal Server Error: /goods/1/7
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 22, in goods
+    orders = Order.objects.filter(client=client and  (datetime.date.today().day() - Order.date_of_create.day() == days))
+TypeError: 'int' object is not callable
+[ERROR   :             django.server] -  2024-01-30 17:06:52,744 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 500 69061
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:18,443 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:19,037 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:21,602 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:22,192 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:24,141 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:24,713 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:25,985 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:26,581 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:31,278 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:31,892 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-30 17:11:36,141 : log_response @ 0241: Internal Server Error: /goods/1/7
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 22, in goods
+    orders = Order.objects.filter(client=client and  (datetime.date.today().day() - Order.date_of_create.day() == days))
+TypeError: 'int' object is not callable
+[ERROR   :             django.server] -  2024-01-30 17:11:36,142 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 500 69094
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:11:51,789 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-30 17:11:52,976 : log_response @ 0241: Internal Server Error: /goods/1/7
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 22, in goods
+    orders = Order.objects.filter(client=client and  (datetime.date.today().day() - Order.date_of_create.day() == days))
+TypeError: 'int' object is not callable
+[ERROR   :             django.server] -  2024-01-30 17:11:52,978 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 500 69094
+[ERROR   :            django.request] -  2024-01-30 17:13:09,758 : log_response @ 0241: Internal Server Error: /goods/1/7
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 22, in goods
+    orders = Order.objects.filter(client=client and  (datetime.date.today().day() - Order.date_of_create.day() == days))
+TypeError: 'int' object is not callable
+[ERROR   :             django.server] -  2024-01-30 17:13:09,760 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 500 69094
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:13:39,375 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:13:40,018 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:13:42,310 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:13:42,886 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:13:44,459 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:13:45,050 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:13:55,668 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-30 17:14:00,332 : log_response @ 0241: Internal Server Error: /goods/1/7
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 23, in goods
+    print(Order.date_of_create.day())
+AttributeError: 'DeferredAttribute' object has no attribute 'day'
+[ERROR   :             django.server] -  2024-01-30 17:14:00,334 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 500 69282
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:14:09,336 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:14:11,724 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 913
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:25:38,210 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:25:40,817 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:27:37,550 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:27:38,139 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:27:40,560 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:02,734 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:03,347 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:28:03,537 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :             django.server] -  2024-01-30 17:28:07,184 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:17,367 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:17,987 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:19,558 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:20,172 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:28:21,966 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :             django.server] -  2024-01-30 17:28:22,675 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :             django.server] -  2024-01-30 17:28:22,838 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :             django.server] -  2024-01-30 17:28:22,978 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:37,524 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:38,143 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:28:38,437 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:46,940 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:28:47,513 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:00,452 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:01,025 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:03,375 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:03,975 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-30 17:29:04,137 : log_response @ 0241: Internal Server Error: /goods/1/7
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 23, in goods
+    print(orders.client)
+AttributeError: 'QuerySet' object has no attribute 'client'
+[ERROR   :             django.server] -  2024-01-30 17:29:04,140 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 500 69232
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:22,266 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:24,000 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:25,385 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:25,967 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:29,293 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:29,877 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:31,130 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:31,724 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:29:32,972 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:51,968 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:29:52,599 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-30 17:29:54,423 : log_response @ 0241: Internal Server Error: /goods/1/7
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 24, in goods
+    print(i.value())
+AttributeError: 'Order' object has no attribute 'value'
+[ERROR   :             django.server] -  2024-01-30 17:29:54,425 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 500 69365
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:30:01,653 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:30:02,821 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:30:08,647 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:30:09,366 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:30:09,736 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 915
+[INFO    :             django.server] -  2024-01-30 17:30:50,545 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 898
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:31:35,474 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:31:36,049 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:31:47,756 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 987
+[INFO    :             django.server] -  2024-01-30 17:32:51,900 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 976
+[INFO    :             django.server] -  2024-01-30 17:33:20,227 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 1060
+[INFO    :             django.server] -  2024-01-30 17:33:28,220 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 1021
+[INFO    :             django.server] -  2024-01-30 17:33:36,606 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 1003
+[INFO    :             django.server] -  2024-01-30 17:33:42,439 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 1010
+[INFO    :             django.server] -  2024-01-30 17:33:53,135 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 930
+[INFO    :             django.server] -  2024-01-30 17:34:05,314 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 942
+[INFO    :             django.server] -  2024-01-30 17:34:28,772 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 930
+[INFO    :             django.server] -  2024-01-30 17:34:30,146 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 930
+[INFO    :             django.server] -  2024-01-30 17:34:37,995 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 939
+[INFO    :             django.server] -  2024-01-30 17:34:53,008 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 959
+[INFO    :             django.server] -  2024-01-30 17:34:57,063 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 960
+[INFO    :             django.server] -  2024-01-30 17:35:07,138 : log_message @ 0212: "GET /goods/1/7 HTTP/1.1" 200 941
+[INFO    :             django.server] -  2024-01-30 17:35:16,495 : log_message @ 0212: "GET /goods/1/30 HTTP/1.1" 200 942
+[INFO    :   django.utils.autoreload] -  2024-01-30 17:36:14,454 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-30 17:36:16,232 : log_message @ 0212: "GET /goods/1/30 HTTP/1.1" 200 973
+[INFO    :             django.server] -  2024-01-30 17:36:25,987 : log_message @ 0212: "GET /goods/1/30 HTTP/1.1" 200 978
+[INFO    :             django.server] -  2024-01-30 17:36:27,578 : log_message @ 0212: "GET /goods/1/30 HTTP/1.1" 200 978
+[INFO    :             django.server] -  2024-01-30 17:36:33,029 : log_message @ 0212: "GET /goods/1/30 HTTP/1.1" 200 982
+[INFO    :             django.server] -  2024-01-30 17:36:40,349 : log_message @ 0212: "GET /goods/1/30 HTTP/1.1" 200 986
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:13:35,258 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:14:23,042 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-31 11:14:28,222 : log_message @ 0212: "GET / HTTP/1.1" 200 992
+[INFO    :             django.server] -  2024-01-31 11:14:28,292 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 200 756
+[INFO    :             django.server] -  2024-01-31 11:14:28,615 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 200 80528
+[WARNING :            django.request] -  2024-01-31 11:14:42,049 : log_response @ 0241: Not Found: /add-product
+[WARNING :             django.server] -  2024-01-31 11:14:42,050 : log_message @ 0212: "GET /add-product HTTP/1.1" 404 2820
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:14:51,277 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:14:51,918 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-31 11:14:53,262 : log_message @ 0212: "GET /add-product HTTP/1.1" 301 0
+[INFO    :             django.server] -  2024-01-31 11:14:53,299 : log_message @ 0212: "GET /add-product/ HTTP/1.1" 200 2223
+[INFO    :             django.server] -  2024-01-31 11:15:18,116 : log_message @ 0212: "GET /add-product/ HTTP/1.1" 200 2199
+[INFO    :             django.server] -  2024-01-31 11:15:19,699 : log_message @ 0212: "GET /add-product/ HTTP/1.1" 200 2199
+[INFO    :             django.server] -  2024-01-31 11:15:21,123 : log_message @ 0212: "GET /add-product/ HTTP/1.1" 200 2199
+[INFO    :             django.server] -  2024-01-31 11:15:21,386 : log_message @ 0212: "GET /add-product/ HTTP/1.1" 200 2199
+[INFO    :             django.server] -  2024-01-31 11:15:52,539 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 200 2308
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:20:39,457 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:20:40,032 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:20:44,803 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:20:45,403 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:20:47,712 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:20:48,294 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:20:50,853 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:20:51,423 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:21:17,141 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-31 11:21:19,352 : log_response @ 0241: Internal Server Error: /add-product/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 51, in add_product
+    product = Product(title=title, discription=discription, cost=cost, amount_product=amount_product, date_of_add=date_of_add, photo=photo)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Product() got unexpected keyword arguments: 'photo'
+[ERROR   :             django.server] -  2024-01-31 11:21:19,355 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 500 79427
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:21:35,627 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:21:36,265 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:21:38,798 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:21:39,409 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-31 11:21:41,090 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 200 2255
+[INFO    :             django.server] -  2024-01-31 11:21:48,200 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 200 2255
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:23:55,807 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:23:56,408 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:24:00,039 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:24:00,555 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:24:01,854 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:24:02,415 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:24:06,323 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:24:06,926 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:24:17,757 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:24:18,370 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:46:19,564 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:46:20,160 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:46:54,974 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:46:55,570 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:46:58,146 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:46:58,723 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:03,490 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:04,052 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:10,489 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:11,068 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:13,384 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:13,964 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:16,261 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:16,818 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:21,251 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:21,850 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:29,730 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:30,310 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:31,574 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:32,145 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:33,402 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:33,975 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:36,340 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:36,913 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:42,437 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:43,010 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:48,575 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:49,149 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:53,518 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:54,073 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:57,461 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:47:58,020 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:06,559 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:07,116 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:09,426 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:09,981 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:14,617 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:15,186 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:19,728 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:20,357 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:46,713 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:47,291 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:50,056 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:48:50,660 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:49:10,760 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:49:11,371 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:49:18,153 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 11:49:18,784 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:19:53,264 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-31 12:19:58,405 : log_response @ 0241: Internal Server Error: /add-product/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 42, in add_product
+    title = form.cleaned_data['title']
+KeyError: 'title'
+[ERROR   :             django.server] -  2024-01-31 12:19:58,408 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 500 70782
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:20:27,326 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:20:27,913 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:21:45,929 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:26:59,758 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:30:48,063 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:55:30,348 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:55:55,242 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-31 12:55:58,627 : log_response @ 0241: Internal Server Error: /add-product/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 44, in add_product
+    date_of_add = form.cleaned_data['date_of_add']
+KeyError: 'date_of_add'
+[ERROR   :             django.server] -  2024-01-31 12:55:58,629 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 500 71371
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:56:31,418 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\forms.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:56:31,995 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:56:39,462 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[ERROR   :            django.request] -  2024-01-31 12:56:42,647 : log_response @ 0241: Internal Server Error: /add-product/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: table mainApp_product has no column named photo
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py", line 50, in add_product
+    product.save()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: table mainApp_product has no column named photo
+[ERROR   :             django.server] -  2024-01-31 12:56:42,654 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 500 153393
+[INFO    :   django.utils.autoreload] -  2024-01-31 12:59:37,549 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-31 12:59:41,039 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 200 2042
+[INFO    :             django.server] -  2024-01-31 12:59:41,298 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 200 80528
+[INFO    :             django.server] -  2024-01-31 12:59:48,575 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 200 2042
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:01:17,470 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\models.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:01:18,098 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:01:52,962 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\views.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:01:53,571 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:14,535 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:15,138 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:16,396 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:17,133 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:18,851 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:19,438 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:20,707 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:21,304 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:30,843 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:31,453 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:43,081 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:43,658 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:48,002 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:48,569 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:51,877 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:04:52,454 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:05:19,581 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\shop\urls.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-01-31 13:05:20,154 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-01-31 13:05:25,148 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 200 2042
+[INFO    :             django.server] -  2024-01-31 13:05:30,034 : log_message @ 0212: "POST /add-product/ HTTP/1.1" 200 2042
+[INFO    :   django.utils.autoreload] -  2024-02-03 21:51:45,452 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-02-03 21:51:56,395 : log_message @ 0212: "GET / HTTP/1.1" 200 968
+[INFO    :             django.server] -  2024-02-03 21:51:56,515 : log_message @ 0212: "GET /static/mainApp/css/main.css HTTP/1.1" 200 756
+[INFO    :             django.server] -  2024-02-03 21:51:56,839 : log_message @ 0212: "GET /static/mainApp/fonts/gilroy-bold.ttf HTTP/1.1" 200 80528
+[WARNING :            django.request] -  2024-02-03 21:51:56,948 : log_response @ 0241: Not Found: /favicon.ico
+[WARNING :             django.server] -  2024-02-03 21:51:56,949 : log_message @ 0212: "GET /favicon.ico HTTP/1.1" 404 2946
+[WARNING :            django.request] -  2024-02-03 21:52:03,348 : log_response @ 0241: Not Found: /adim
+[WARNING :             django.server] -  2024-02-03 21:52:03,349 : log_message @ 0212: "GET /adim HTTP/1.1" 404 2925
+[INFO    :             django.server] -  2024-02-03 21:52:06,578 : log_message @ 0212: "GET /admin/ HTTP/1.1" 302 0
+[INFO    :             django.server] -  2024-02-03 21:52:06,707 : log_message @ 0212: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+[INFO    :   django.utils.autoreload] -  2024-02-03 21:52:53,342 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-02-03 21:53:02,716 : log_message @ 0212: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[INFO    :             django.server] -  2024-02-03 21:53:02,777 : log_message @ 0212: "GET /admin/ HTTP/1.1" 200 5556
+[INFO    :             django.server] -  2024-02-03 21:53:28,162 : log_message @ 0212: "GET /admin/auth/group/ HTTP/1.1" 200 7251
+[INFO    :             django.server] -  2024-02-03 21:53:28,205 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 21:53:29,903 : log_message @ 0212: "GET /admin/ HTTP/1.1" 200 5556
+[INFO    :   django.utils.autoreload] -  2024-02-03 21:53:56,971 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 21:53:57,669 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:04:41,910 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:01,064 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:01,656 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:04,188 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:04,787 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:09,385 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:10,031 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:14,629 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:15,218 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:35,492 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:36,086 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:47,991 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:05:48,577 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:03,571 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:04,163 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:08,797 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:09,368 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:18,102 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:18,701 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:36,759 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:37,356 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:47,167 : trigger_reload @ 0266: D:\AllPrograming\HTMLProjects\Shop\shop\mainApp\admin.py changed, reloading.
+[INFO    :   django.utils.autoreload] -  2024-02-03 22:06:47,774 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-02-03 22:06:51,107 : log_message @ 0212: "GET /admin/ HTTP/1.1" 200 7057
+[INFO    :             django.server] -  2024-02-03 22:06:55,648 : log_message @ 0212: "GET /admin/mainApp/client/ HTTP/1.1" 200 14141
+[INFO    :             django.server] -  2024-02-03 22:06:55,683 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:06:57,784 : log_message @ 0212: "GET /admin/mainApp/client/add/ HTTP/1.1" 200 11013
+[INFO    :             django.server] -  2024-02-03 22:06:57,812 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:07:09,249 : log_message @ 0212: "POST /admin/mainApp/client/add/ HTTP/1.1" 200 11216
+[INFO    :             django.server] -  2024-02-03 22:07:09,281 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:07:17,057 : log_message @ 0212: "POST /admin/mainApp/client/add/ HTTP/1.1" 302 0
+[INFO    :             django.server] -  2024-02-03 22:07:17,079 : log_message @ 0212: "GET /admin/mainApp/client/ HTTP/1.1" 200 14710
+[INFO    :             django.server] -  2024-02-03 22:07:17,109 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:07:24,369 : log_message @ 0212: "GET /admin/mainApp/order/ HTTP/1.1" 200 15528
+[INFO    :             django.server] -  2024-02-03 22:07:24,399 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:07:34,430 : log_message @ 0212: "GET /admin/mainApp/order/add/ HTTP/1.1" 200 13452
+[INFO    :             django.server] -  2024-02-03 22:07:34,458 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:07:52,541 : log_message @ 0212: "POST /admin/mainApp/order/add/ HTTP/1.1" 302 0
+[INFO    :             django.server] -  2024-02-03 22:07:52,563 : log_message @ 0212: "GET /admin/mainApp/order/ HTTP/1.1" 200 16118
+[INFO    :             django.server] -  2024-02-03 22:07:52,596 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:08:11,458 : log_message @ 0212: "GET /admin/mainApp/product/ HTTP/1.1" 200 17081
+[INFO    :             django.server] -  2024-02-03 22:08:11,495 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:08:16,825 : log_message @ 0212: "GET /admin/mainApp/product/add/ HTTP/1.1" 200 11767
+[INFO    :             django.server] -  2024-02-03 22:08:16,858 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[ERROR   :            django.request] -  2024-02-03 22:08:35,628 : log_response @ 0241: Internal Server Error: /admin/mainApp/product/add/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: mainApp_product.date_of_add
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: mainApp_product.date_of_add
+[ERROR   :             django.server] -  2024-02-03 22:08:35,637 : log_message @ 0212: "POST /admin/mainApp/product/add/ HTTP/1.1" 500 196788
+[INFO    :             django.server] -  2024-02-03 22:08:49,454 : log_message @ 0212: "GET /admin/mainApp/product/add/ HTTP/1.1" 200 11767
+[ERROR   :            django.request] -  2024-02-03 22:08:56,318 : log_response @ 0241: Internal Server Error: /admin/mainApp/product/add/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: mainApp_product.date_of_add
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: mainApp_product.date_of_add
+[ERROR   :             django.server] -  2024-02-03 22:08:56,325 : log_message @ 0212: "POST /admin/mainApp/product/add/ HTTP/1.1" 500 196860
+[INFO    :             django.server] -  2024-02-03 22:09:10,134 : log_message @ 0212: "GET /admin/mainApp/product/add/ HTTP/1.1" 200 11767
+[INFO    :             django.server] -  2024-02-03 22:09:13,912 : log_message @ 0212: "GET /admin/mainApp/product/ HTTP/1.1" 200 17081
+[INFO    :             django.server] -  2024-02-03 22:09:15,964 : log_message @ 0212: "GET /admin/mainApp/product/add/ HTTP/1.1" 200 11767
+[INFO    :             django.server] -  2024-02-03 22:09:15,996 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-03 22:09:26,546 : log_message @ 0212: "POST /admin/mainApp/product/add/ HTTP/1.1" 200 11961
+[INFO    :             django.server] -  2024-02-03 22:09:26,575 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[ERROR   :            django.request] -  2024-02-03 22:09:32,218 : log_response @ 0241: Internal Server Error: /admin/mainApp/product/add/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: mainApp_product.date_of_add
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: mainApp_product.date_of_add
+[ERROR   :             django.server] -  2024-02-03 22:09:32,224 : log_message @ 0212: "POST /admin/mainApp/product/add/ HTTP/1.1" 500 196860
+[INFO    :   django.utils.autoreload] -  2024-02-04 12:25:10,319 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-02-04 12:25:14,242 : log_message @ 0212: "GET / HTTP/1.1" 200 968
+[WARNING :            django.request] -  2024-02-04 12:25:14,609 : log_response @ 0241: Not Found: /favicon.ico
+[WARNING :             django.server] -  2024-02-04 12:25:14,610 : log_message @ 0212: "GET /favicon.ico HTTP/1.1" 404 2946
+[WARNING :            django.request] -  2024-02-04 12:25:14,619 : log_response @ 0241: Not Found: /favicon.ico
+[WARNING :             django.server] -  2024-02-04 12:25:14,619 : log_message @ 0212: "GET /favicon.ico HTTP/1.1" 404 2946
+[INFO    :             django.server] -  2024-02-04 12:25:20,038 : log_message @ 0212: "GET /admin/ HTTP/1.1" 200 7683
+[INFO    :             django.server] -  2024-02-04 12:25:28,603 : log_message @ 0212: "GET /admin/mainApp/product/ HTTP/1.1" 200 17081
+[INFO    :             django.server] -  2024-02-04 12:25:29,138 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-04 12:25:30,950 : log_message @ 0212: "GET /admin/mainApp/product/add/ HTTP/1.1" 200 11132
+[INFO    :             django.server] -  2024-02-04 12:25:32,102 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[ERROR   :            django.request] -  2024-02-04 12:25:47,384 : log_response @ 0241: Internal Server Error: /admin/mainApp/product/add/
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: mainApp_product.date_of_add
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1886, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1798, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\admin\options.py", line 1227, in save_model
+    obj.save()
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1820, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Ðîìà\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: mainApp_product.date_of_add
+[ERROR   :             django.server] -  2024-02-04 12:25:47,394 : log_message @ 0212: "POST /admin/mainApp/product/add/ HTTP/1.1" 500 196003
+[INFO    :   django.utils.autoreload] -  2024-02-04 12:27:11,520 : run_with_reloader @ 0668: Watching for file changes with StatReloader
+[INFO    :             django.server] -  2024-02-04 12:27:15,851 : log_message @ 0212: "POST /admin/mainApp/product/add/ HTTP/1.1" 200 12094
+[INFO    :             django.server] -  2024-02-04 12:27:15,899 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[INFO    :             django.server] -  2024-02-04 12:27:17,802 : log_message @ 0212: "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+[INFO    :             django.server] -  2024-02-04 12:27:23,636 : log_message @ 0212: "POST /admin/mainApp/product/add/ HTTP/1.1" 302 0
+[INFO    :             django.server] -  2024-02-04 12:27:23,676 : log_message @ 0212: "GET /admin/mainApp/product/ HTTP/1.1" 200 17680
+[INFO    :             django.server] -  2024-02-04 12:27:23,705 : log_message @ 0212: "GET /admin/jsi18n/ HTTP/1.1" 200 3343
